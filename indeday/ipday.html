@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+Background-image:url("bggif.jpeg");
+height:100%;
+Background-repeat:no-repeat;
+Background-size:cover;
+}
+#main
+{
+Position:fixed;
+Top:200px;
+Left:100px;
+background-color:rgb(255,182,193);
+color:black;
+Padding:15px;
+}
+#demo
+{
+Position:fixed;
+Top:200px;
+Left:300px;
+background-color:rgb(255,182,193);
+Padding:15px;
+}
+h1
+{
+color:rgba(20,30,30,1);
+Font-size:50px;
+Text-align:center;
+Font-style:italic;
+}
+h2
+{
+Color:rgba(10,10,180,0.5);
+text-align:center;
+Font-size:60px;
+Font-style:Courier;
+}
+h3
+{
+text-align:center;
+}
+#put
+{
+Color:green;
+}
+</style>
+</head>
+<body>
+<div id="exit">
+<img src="ipd5.jpeg" style="width:100%;height:100%">
+<input id="main" placeholder="Enter Your Name">
+<button type="button" onclick="myfunction()" id="demo">GO</button>
+<h2>A nation's culture resides in the hearts and in the soul of its people</h2>
+<h3>      -MAHATMA GANDHI<h3>
+<iframe width="0" height="0" src="song.mpeg" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="enter">
+<img src="ipd3.jpeg" style="width:100%;height:100%">
+<h1> Wishing You Happy Independence Day</h1>
+<h2 id="put">hi</h2>
+<img src="mb2.jpeg"   style="width:100%;height:100%">
+
+</div>
+<script>
+var a=document.getElementById("exit");
+var b=document.getElementById("enter");
+b.style.display="none";
+function myfunction(){
+var x=document.getElementById("main").value;
+a.style.display="none";
+b.style.display="block";
+document.getElementById("put").innerHTML=x;
+}
+</script>
+</body>
+</html>

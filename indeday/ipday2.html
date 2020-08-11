@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+Background-color:rgba(255,182,193,1);
+height:100%;
+Background-repeat:no-repeat;
+Background-size:cover;
+}
+#main
+{
+Position:fixed;
+Top:1000px;
+Left:100px;
+background-color:rgb(135,206,235);
+color:black;
+Padding:25px;
+}
+#demo
+{
+Position:fixed;
+Top:1000px;
+Left:450px;
+background-color:rgb(135,206,235);
+Padding:25px;
+color:red;
+font-size:30px;
+}
+#demo2
+{
+Position:fixed;
+Top:1000px;
+Left:400px;
+}
+
+h1
+{
+color:rgba(20,30,30,1);
+Font-size:50px;
+Text-align:center;
+Font-style:italic;
+}
+h2
+{
+Color:rgba(10,10,180,0.5);
+text-align:center;
+Font-size:60px;
+Font-style:Courier;
+}
+h3
+{
+text-align:center;
+}
+h4
+{
+ position:fixed;
+ top:1300px;
+ left:300px;
+text-align:center;
+Font-size:40px;
+Font-style:italic;
+Color:red;
+}
+
+#put
+{
+Color:green;
+}
+
+ .class
+  {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+  }
+#one
+{
+Position:fixed;
+Top:200px;
+Left:0px;
+}
+#two
+{
+Position:fixed;
+Top:200px;
+right:0px;
+}
+#three
+{
+Position:fixed;
+Top:500px;
+left:0px;
+}
+#four
+{
+Position:fixed;
+Top:500px;
+right:0px;
+}
+#five
+{
+Position:fixed;
+Top:800px;
+left:0px;
+}
+#six
+{
+Position:fixed;
+Top:800px;
+right:0px;
+}
+#seven
+{
+Position:fixed;
+Top:1100px;
+left:0px;
+}
+#nine
+{
+Position:fixed;
+Top:1400px;
+left:0px;
+}
+#ten
+{
+Position:fixed;
+Top:1400px;
+right:0px;
+}
+
+#over
+{
+Position:fixed;
+Top:500px;
+left:400px;
+}
+ ::placeholder
+{
+Font-size:40px;
+Color:red;
+}
+</style>
+</head>
+<body>
+<div id="exit">
+<img src="ipd5.jpeg" class="class"style="width:85%;height:100%">
+<input id="main" placeholder="Your Name">
+<img src="arrow.jpeg" id="demo2" style="width:5%;height:5%;display:inline">
+<button type="button" onclick="myfunction()" id="demo">GO</button>
+<h2>A nation's culture resides in the hearts and in the soul of its people</h2>
+<h3>      -MAHATMA GANDHI<h3>
+<iframe width="0" height="0" src="song.mpeg" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="enter">
+
+<h1> Wishing You Happy Independence Day</h1>
+<h2 id="put">hi</h2>
+<img src="th2.jpeg"  class="class" id="over" style="width:40%;height:40%">
+<h4>SALUTE FOR THE REAL HEROES</h4> 
+<img src="salute.jpeg"  style="width:5%;height:5%;display:inline">
+<img src="mb2.jpeg" id="one" style="width:15%;height:15%;display:inline">
+<img src="bose.jpeg" id="two"style="width:15%;height:15%;display:inline">
+<img src="tilak2.jpeg" id="three" style="width:15%;height:15%;display:inline">
+<img src="azad.jpeg" id="four" style="width:15%;height:15%;display:inline">
+<img src="gok.jpeg" id="five" style="width:15%;height:15%;display:inline">
+<img src="prasad.jpeg" id="six" style="width:15%;height:15%;display:inline">
+<img src="nehru.jpeg" id="seven" style="width:15%;height:15%;display:inline">
+<img src="patel.jpeg" id="eight" style="width:15%;height:15%;display:inline">
+<img src="shahtri.jpeg" id="nine" style="width:15%;height:15%;display:inline">
+<img src="singh.jpeg" id="ten" style="width:15%;height:15%;display:inline">
+</div>
+<script>
+var a=document.getElementById("exit");
+var b=document.getElementById("enter");
+b.style.display="none";
+function myfunction(){
+var x=document.getElementById("main").value;
+a.style.display="none";
+b.style.display="block";
+document.getElementById("put").innerHTML=x;
+}
+</script>
+</body>
+</html>
